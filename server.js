@@ -137,8 +137,12 @@ app.get("/api/v1/task_metrics", (req, res) =>{
     SUM(CASE WHEN task_status = "CLOSED" THEN 1 ELSE 0 END) AS completed_tasks  
     FROM tasks`, (err, row) => {
         if (err) {
-        return res.status(500).json({ error: err.message })
-        }
+        console.log(err.message)
+        return res.status(500).json(
+            { 
+                error: "Something went wrong" 
+            }
+        )}
         
         res.json(row)
     })

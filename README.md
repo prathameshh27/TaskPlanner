@@ -106,9 +106,11 @@ Follow these steps to set up and run the project:
     {
       "title": "New Task Title",
       "description": "New Task Description",
-      "status": "INPROGRESS" // OPEN | INPROGRESS | CLOSED
+      "status": "INPROGRESS" 
     }
     ```
+  - Note that status can accept below values:
+    - `status`: OPEN | INPROGRESS | CLOSED 
   - Response (Success):
     - HTTP Status: 200 OK
     - Body:
@@ -152,8 +154,7 @@ Follow these steps to set up and run the project:
     - Body:
       ```json
       {
-        "error": "Internal Server Error",
-        "message": "<error-message>"
+        "error": "Something went wrong" 
       }
       ```
 

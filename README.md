@@ -167,7 +167,3 @@ The SQLite database is automatically initialized when the server starts. It crea
 - Ensure that you have the required dependencies installed, and the server is running before making API requests.
 - For the `PATCH` endpoint, you can update one or more fields of a task.
 - Task statuses should be one of the following: `OPEN`, `INPROGRESS`, or `CLOSED`.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

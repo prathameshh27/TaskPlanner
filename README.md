@@ -17,16 +17,16 @@ Follow these steps to set up and run the project:
 1. Clone this repository (if you haven't already) or download the project files:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/prathameshh27
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd <project-directory>
+   cd TaskPlanner
    ```
 
-3. Install project dependencies:
+3. Install project dependencies (Not required):
 
    ```bash
    npm install
@@ -92,8 +92,7 @@ Follow these steps to set up and run the project:
     - Body:
       ```json
       {
-        "error": "Internal Server Error",
-        "message": "<error-message>"
+        "error": "Something went wrong"
       }
       ```
 

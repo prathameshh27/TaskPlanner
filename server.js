@@ -55,7 +55,12 @@ app.get("/api/v1/task", (req, res) =>{
 
     db.all('SELECT * FROM tasks ORDER BY task_id DESC LIMIT ? OFFSET ?', [limit, offset], (err, rows) => {
         if (err) {
-        return res.status(500).json({ error: err.message })
+        console.log(err.message)
+        return res.status(500).json(
+            { 
+                error: "Something went wrong"
+            }
+        )
         }
         res.json(rows)
     })
